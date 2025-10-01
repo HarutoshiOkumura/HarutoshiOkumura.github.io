@@ -54,7 +54,7 @@ export default function ContactPage() {
 						</p>
 					</motion.div>
 
-					<div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+					<div className="flex flex-1 ">
 						<motion.div variants={fadeIn('right', 0.3)}>
 							<Card className="card-gradient h-full">
 								<CardContent className="p-6">
@@ -77,51 +77,7 @@ export default function ContactPage() {
 							</Card>
 						</motion.div>
 
-						<motion.div variants={fadeIn('left', 0.3)}>
-							<form onSubmit={handleSubmit} className="space-y-4">
-								<div>
-									<Input
-										placeholder="Your Name"
-										name="name"
-										value={formState.name}
-										onChange={handleChange}
-										required
-									/>
-								</div>
-								<div>
-									<Input
-										type="email"
-										placeholder="Your Email"
-										name="email"
-										value={formState.email}
-										onChange={handleChange}
-										required
-									/>
-								</div>
-								<div>
-									<Input
-										placeholder="Subject"
-										name="subject"
-										value={formState.subject}
-										onChange={handleChange}
-										required
-									/>
-								</div>
-								<div>
-									<Textarea
-										placeholder="Your Message"
-										name="message"
-										value={formState.message}
-										onChange={handleChange}
-										required
-										className="min-h-[150px]"
-									/>
-								</div>
-								<Button type="submit" className="w-full">
-									Send Message <Send className="ml-2 h-4 w-4" />
-								</Button>
-							</form>
-						</motion.div>
+						
 					</div>
 				</motion.div>
 			</div>

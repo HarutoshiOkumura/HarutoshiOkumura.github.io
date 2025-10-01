@@ -48,7 +48,7 @@ export function Navbar() {
 							whileHover={{ scale: 1.05 }}
 							className="font-bold text-2xl text-gradient"
 						>
-							Portfolio
+							oku.no.haru
 						</motion.div>
 					</Link>
 					<nav className="hidden md:flex gap-6">

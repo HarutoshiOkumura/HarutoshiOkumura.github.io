@@ -17,17 +17,19 @@ export default function SkillsPage() {
 		title,
 		skills,
 		icon,
-		delay
+		delay,
+		colorClass
 	}: {
 		title: string;
 		skills: typeof technicalSkills;
 		icon: React.ReactNode;
 		delay: number;
+		colorClass: string;
 	}) => (
 		<motion.div variants={fadeIn('up', delay)}>
 			<Card className="card-gradient">
 				<CardContent className="p-6">
-					<div className="flex items-center gap-2 mb-6">
+					<div className={`flex items-center gap-2 mb-6 ${colorClass}`}>
 						{icon}
 						<h2 className="text-2xl font-semibold">{title}</h2>
 					</div>
@@ -40,7 +42,7 @@ export default function SkillsPage() {
 								</div>
 								<div className="skill-bar">
 									<motion.div
-										className="skill-progress"
+										className={`skill-progress ${colorClass}`}
 										initial={{ width: 0 }}
 										whileInView={{ width: `${skill.level * 10}%` }}
 										viewport={{ once: true }}
@@ -66,35 +68,38 @@ export default function SkillsPage() {
 					<motion.div variants={fadeIn('down', 0.2)} className="text-center mb-12">
 						<h1 className="text-4xl font-bold mb-4">Skills & Expertise</h1>
 						<p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-							A comprehensive overview of my technical abilities, software proficiency,
-							soft skills, and language capabilities.
+							A place for me to rate my skills based on how much I struggled with them. 
 						</p>
 					</motion.div>
 
 					<div className="grid grid-cols-1 md:grid-cols-2 gap-8">
 						<SkillCategory
-							title="Technical Skills"
+							title="Database & Services"
 							skills={technicalSkills}
-							icon={<Cpu className="h-6 w-6 text-primary" />}
+							icon={<Cpu className="h-6 w-6" />}
 							delay={0.3}
+							colorClass="text-primary"
 						/>
 						<SkillCategory
-							title="Software Proficiency"
+							title="Software Languages"
 							skills={softwareSkills}
-							icon={<Code2 className="h-6 w-6 text-secondary" />}
+							icon={<Code2 className="h-6 w-6" />}
 							delay={0.4}
+							colorClass="text-secondary"
 						/>
 						<SkillCategory
-							title="Soft Skills"
+							title="Libraries & Frameworks"
 							skills={softSkills}
-							icon={<Brain className="h-6 w-6 text-accent" />}
+							icon={<Brain className="h-6 w-6" />}
 							delay={0.5}
+							colorClass="text-accent"
 						/>
 						<SkillCategory
 							title="Languages"
 							skills={languageSkills}
-							icon={<Languages className="h-6 w-6 text-primary" />}
+							icon={<Languages className="h-6 w-6" />}
 							delay={0.6}
+							colorClass="text-tertiary"
 						/>
 					</div>
 				</motion.div>

@@ -7,14 +7,14 @@ export const siteConfig = {
 			title: 'Home',
 			href: '/',
 		},
-		{
-			title: 'About',
-			href: '/about',
-		},
-		{
-			title: 'Education',
-			href: '/education',
-		},
+		// {
+		// 	title: 'About',
+		// 	href: '/about',
+		// },
+		// {
+		// 	title: 'Education',
+		// 	href: '/education',
+		// },
 		{
 			title: 'Skills',
 			href: '/skills',
@@ -27,27 +27,27 @@ export const siteConfig = {
 			title: 'Projects',
 			href: '/projects',
 		},
-		{
-			title: 'Certificates',
-			href: '/certificates',
-		},
-		{
-			title: 'Blog',
-			href: '/blog',
-		},
+		// {
+		// 	title: 'Certificates',
+		// 	href: '/certificates',
+		// },
+		// {
+		// 	title: 'Blog',
+		// 	href: '/blog',
+		// },
 		{
 			title: 'Contact',
 			href: '/contact',
 		},
 	],
 	links: {
-		github: 'https://github.com/yourusername',
-		linkedin: 'https://linkedin.com/in/yourusername',
+		github: 'https://github.com/HarutoshiOkumura',
+		linkedin: 'https://www.linkedin.com/in/harutoshi-okumura/',
 		twitter: 'https://twitter.com/yourusername',
 		facebook: 'https://facebook.com/yourusername',
 		instagram: 'https://instagram.com/yourusername',
 		whatsapp: 'https://wa.me/yourphonenumber',
-		email: 'mailto:youremail@example.com',
+		email: 'mailto:HOkumura032@gmail.com',
 		phone: 'tel:+1234567890',
 	},
 };
@@ -64,30 +64,60 @@ export type Experience = {
 
 export const experiences: Experience[] = [
 	{
-		title: 'Engineering Intern',
-		company: 'Tech Company',
-		location: 'City, Country',
-		startDate: 'May 2023',
-		endDate: 'Aug 2023',
+		title: 'Technical Advisor (Gen AI) Intern',
+		company: 'Scale AI',
+		location: 'San Francisco, CA',
+		startDate: 'May 2025',
+		endDate: 'Aug 2025',
 		description: [
-			'Worked on developing and testing software components for embedded systems',
-			'Collaborated with senior engineers on project planning and execution',
-			'Implemented test procedures for quality assurance',
+			'Researched generative model reasoning in C++/Python, boosting competitive programming benchmarks by 20%',
+			'Enhanced LLM SWE agent’s ability to navigate large codebases leveraging Git, Docker, and Python',
+			'Reduced model reasoning error rate by 25% through cross-functional error analysis with AI research teams and targeted fine-tuning of LLM architectures',
 		],
-		technologies: ['C++', 'Python', 'MATLAB', 'Git'],
+		technologies: ['C++', 'Python', 'Git', 'Docker', 'LLM', 'Algorithmic Analysis'],
 	},
 	{
-		title: 'Research Assistant',
-		company: 'University Lab',
-		location: 'City, Country',
-		startDate: 'Jan 2023',
-		endDate: 'Apr 2023',
+		title: 'Founding Software Engineer',
+		company: 'Robust.io',
+		location: 'New York City, NY',
+		startDate: 'Jun 2025',
+		endDate: 'Sep 2025',
 		description: [
-			'Assisted in research focusing on advanced materials for mechanical applications',
-			'Conducted literature reviews and compiled research findings',
-			'Performed data analysis and visualization of experimental results',
+			'Designed an end-to-end, Agent Controller (TypeScript + Fastify) to orchestrate creation, tracking, and termination of cloud Letta agents and local sandbox workers, establishing an unified, reusable lifecycle API',
+			'Architected a multi-agent orchestration platform with Redis caching for completed workstreams and SQL snapshotting for execution-state tracking, enabling parallel agent workflows with robust global-undo support',
+			'Engineered a Fastify backend ingesting, indexing, and searching files, enabling sub -100 ms latency in retrieval',
 		],
-		technologies: ['MATLAB', 'CAD', 'Data Analysis', 'Python'],
+		technologies: ['TypeScript', 'Fastify', 'Redis', 'SQL', 'Stateful Agents (MeMGPT)', 'Multi-Agent Orchestration', 'File Indexing', 'Context Engineering'],
+	},
+	{
+		title: 'Software Engineer',
+		company: 'Pagent TV',
+		location: 'Boston, MA',
+		startDate: 'Mar 2025',
+		endDate: 'Jun 2025',
+		description: [
+			'Built a recommendation system using TensorFlow Serving, hosted DeepFM model with Apache Flink Kafka joins and GPU-accelerated inference, cutting p99 latency by 90%',
+			'Engineered a two-tiered storage solution for unused Kafka streams, leveraging AWS Redis for immediate caching & S3 Glacier Deep Archive for long-term storage, optimizing cost-performance by 95.7%',
+			'Exposed a Socket.io API for live match updates and real-time WebSocket communications, supporting over 1000 concurrent players with 97.8% uptime',
+			'Engineered a MongoDB-backed scheduling engine that executes recurring workflows with Node.js',
+			'Built & published video ranker for a TikTok-style video competition mobile app using React-Native & Swift',
+			'Containerized the application stack with Docker to provision reproducible multi-container environments, cutting CI/CD deployment failures by 40%',
+		],
+		technologies: ['TypeScript', 'Node.js', 'React-Native', 'Docker', 'Kafka', 'MongoDB', 'Redis', 'Socket.io', 'TensorFlow', 'Apache Flink', 'CUDA', 'CI/CD', 'Scheduling Engines', 'Recommendation Systems'],
+	},
+	{
+		title: 'Software Engineer Intern',
+		company: 'KnoWhiz',
+		location: 'Bellevue, WA',
+		startDate: 'Jun 2024',
+		endDate: 'Dec 2024',
+		description: [
+			'Researched MCQ generation using LLMs with Q&A fine-tuning, driving accuracy from 76% to 92%',
+			'Engineered an asynchronous math pipeline using Quart & integrating Azure Blob Storage, MongoDB, & OpenAI to automate generation & storage of math learning material, increasing STEM engagement by 20%',
+			'Diagnosed LLM content generation latency issues & optimized delivery by dynamically rendering courses, improving render time by 30% & active customer base to 300',
+			'Developed an optimized study feature using a job scheduling algorithm (MFQS) to prioritize new flashcards & revisit earlier topics systematically',
+		],
+		technologies: ['TypeScript', 'Node.js', 'Quart', 'Azure Blob Storage', 'MongoDB', 'OpenAI APIs', 'GenAI', 'Job Scheduling Algorithms', 'Asynchronous Processing', 'React', 'Java', 'Spring Boot', 'REST APIs'],
 	},
 ];
 
@@ -102,32 +132,60 @@ export type Project = {
 
 export const projects: Project[] = [
 	{
-		title: 'Smart Home Automation System',
+		title: 'Automatic Contradiction Detection in Logical Texts with LLM',
 		description:
-			'Designed and implemented a smart home automation system using IoT technologies to control lighting, temperature, and security features.',
+			'Designed a novel framework integrating Symbolic AI (formal logic) & LLMs to classify debate statements & identify logical inconsistencies using a proprietary taxonomy based on Aristotle’s law',
 		image: 'https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg',
-		tags: ['IoT', 'Arduino', 'C++', 'Mobile App'],
+		tags: ['LLM', 'RoBERTa', 'NLP / NLI', 'Python', 'Pipelines', 'HuggingFace'],
 		link: '#',
 		repo: '#',
 	},
 	{
-		title: 'Structural Analysis Software',
+		title: 'PPM Image Editing Command Line Tool',
 		description:
-			'Developed software for structural analysis of beams and trusses using numerical methods and visualization techniques.',
+			'Developed a command line tool (in C) for image editing using PPM format, allowing users to apply various filters and transformations to images.',
 		image: 'https://images.pexels.com/photos/1036657/pexels-photo-1036657.jpeg',
-		tags: ['MATLAB', 'Python', 'FEA', 'Structural Engineering'],
+		tags: ['C', 'Vanguard', 'Image Processing', 'Command Line Tool', 'Linux', 'Memory Management'],
 		link: '#',
 		repo: '#',
 	},
 	{
-		title: 'Renewable Energy Monitoring',
+		title: 'Pediatric Savior Airway Management Simulation Chatbot',
 		description:
-			'Created a system to monitor and analyze performance of solar panels and wind turbines for optimal energy production.',
+			'Developed a chatbot for pediatric airway management simulation, training 100+ medical students asynchronously with flexibility in airway management scenarios.',
 		image: 'https://images.pexels.com/photos/356036/pexels-photo-356036.jpeg',
-		tags: ['Data Analysis', 'IoT', 'Renewable Energy', 'Visualization'],
+		tags: ['LLM', 'Python', 'FastAPI', 'React', 'Docker', 'AWS'],
 		link: '#',
-		repo: '#',
+		repo: 'https://github.com/JunyiZhou-Conny/Airway-Management-Assistant',
 	},
+	{
+		title: 'Insurance Policy Normalizor & Classifier',
+		description:
+			'Developed a pipeline for normalizing insurance policy data () into a standard format with 98% accuracy, Plaid but for Insurance.',
+		image: 'https://images.pexels.com/photos/356036/pexels-photo-356036.jpeg',
+		tags: ['Typescript', 'Next.js', 'Pipelines', 'React', 'Docker', 'AWS'],
+		link: '#',
+		repo: 'https://github.com/HarutoshiOkumura/mini-axle?tab=readme-ov-file',
+	},
+	{
+		title: 'NBA Player Performance Predictor',
+		description:
+			'Researched with multiple Machine Learning Models to predict NBA player performance using past NBA performance from Kaggle. ',
+		image: 'https://images.pexels.com/photos/356036/pexels-photo-356036.jpeg',
+		tags: ['Python', 'Machine Learning', 'Random Forest', 'CNN', 'Feature Engineering', 'Rigid Regression', 'Pipelines'],
+		link: '#',
+		repo: 'https://github.com/blakegrudzien/MLFinal?tab=readme-ov-file',
+	},
+	{
+		title: 'Official Website for Emory University\'s Asian Student Organization',
+		description:
+			'Developing the official website for Emory University\'s Asian Student Organization, making advertisment, event management and merch sales easier. ',
+		image: 'https://images.pexels.com/photos/356036/pexels-photo-356036.jpeg',
+		tags: ['Next.js', 'Tailwind CSS', 'TypeScript', 'Shadcn UI', 'Framer Motion', 'Vercel'],
+		link: '#',
+		repo: 'https://github.com/HarutoshiOkumura/aso-website',
+	},
+
 ];
 
 export type Education = {
@@ -215,32 +273,47 @@ export type Skill = {
 };
 
 export const skills: Skill[] = [
-	// Technical Skills
-	{ name: 'Mechanical Design', level: 9, category: 'technical' },
-	{ name: 'Structural Analysis', level: 8, category: 'technical' },
-	{ name: 'Thermodynamics', level: 7, category: 'technical' },
-	{ name: 'Control Systems', level: 8, category: 'technical' },
-	{ name: 'Circuit Design', level: 6, category: 'technical' },
+	// Database & Services
+	{ name: 'MySQL', level: 9, category: 'technical' },
+	{ name: 'PostgreSQL', level: 7, category: 'technical' },
+	{ name: 'AWS', level: 8, category: 'technical' },
+	{ name: 'Azure', level: 5, category: 'technical' },
+	{ name: 'Redis', level: 7, category: 'technical' },
+	{ name: 'MongoDB', level: 9, category: 'technical' },
+	{ name: 'GraphQL', level: 7, category: 'technical' },
+	{ name: 'Google Cloud', level: 7, category: 'technical' },
 
-	// Software Skills
-	{ name: 'MATLAB', level: 9, category: 'software' },
-	{ name: 'AutoCAD', level: 8, category: 'software' },
-	{ name: 'SolidWorks', level: 9, category: 'software' },
-	{ name: 'Python', level: 7, category: 'software' },
-	{ name: 'C++', level: 6, category: 'software' },
-	{ name: 'ANSYS', level: 8, category: 'software' },
+	// Software Languages
+	{ name: 'Python', level: 9, category: 'software' },
+	{ name: 'TypeScript', level: 8, category: 'software' },
+	{ name: 'C++', level: 4, category: 'software' },
+	{ name: 'Java', level: 9, category: 'software' },
+	{ name: 'C', level: 7, category: 'software' },
+	{ name: 'Git', level: 8, category: 'software' },
+	{ name: 'SQL', level: 8, category: 'software' },
+	{ name: 'HTML/CSS', level: 8, category: 'software' },
 
-	// Soft Skills
-	{ name: 'Problem Solving', level: 9, category: 'soft' },
-	{ name: 'Team Leadership', level: 8, category: 'soft' },
-	{ name: 'Project Management', level: 7, category: 'soft' },
-	{ name: 'Technical Writing', level: 8, category: 'soft' },
-	{ name: 'Presentation', level: 7, category: 'soft' },
+
+	// Frameworks 
+
+	{ name: 'React', level: 8, category: 'soft' },
+	{ name: 'Next.js', level: 7, category: 'soft' },
+	{ name: 'OpenAI', level: 6, category: 'soft' },
+	{ name: 'Node.js', level: 5, category: 'soft' },
+	{ name: 'PyTorch', level: 5, category: 'soft' },
+	{ name: 'TensorFlow', level: 4, category: 'soft' },
+	{ name: 'FastAPI', level: 8, category: 'soft' },
+	{ name: 'Quart', level: 7, category: 'soft' },
+	{ name: 'Docker', level: 8, category: 'soft' },
+	{ name: 'Kafka', level: 5, category: 'soft' },
+	{ name: 'CUDA', level: 3, category: 'soft' },
+	{ name: 'CI/CD', level: 7, category: 'soft' },
 
 	// Languages
 	{ name: 'English', level: 10, category: 'language' },
-	{ name: 'Spanish', level: 6, category: 'language' },
-	{ name: 'French', level: 4, category: 'language' },
+	{ name: 'Cantonese', level: 10, category: 'language' },
+	{ name: 'Japanese', level: 6, category: 'language' },
+	{ name: 'Chinese', level: 7, category: 'language' },
 ];
 
 export type BlogPost = {

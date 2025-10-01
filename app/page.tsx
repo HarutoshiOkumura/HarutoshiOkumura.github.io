@@ -69,7 +69,7 @@ export default function Home() {
 					<AboutPreview />
 					<ProjectsPreview />
 					<SkillsPreview />
-					<ContactPreview />
+					{/* <ContactPreview /> */}
 				</>
 			)}
 		</>

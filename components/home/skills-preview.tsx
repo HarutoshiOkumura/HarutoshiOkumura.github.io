@@ -57,8 +57,8 @@ export function SkillsPreview() {
 												<span className="text-muted-foreground">{skill.level}/10</span>
 											</div>
 											<div className="skill-bar">
-												<motion.div
-													className="skill-progress"
+									<motion.div
+										className="skill-progress text-primary"
 													initial={{ width: 0 }}
 													whileInView={{ width: `${skill.level * 10}%` }}
 													viewport={{ once: true }}
@@ -87,8 +87,8 @@ export function SkillsPreview() {
 												<span className="text-muted-foreground">{skill.level}/10</span>
 											</div>
 											<div className="skill-bar">
-												<motion.div
-													className="skill-progress"
+									<motion.div
+										className="skill-progress text-secondary"
 													initial={{ width: 0 }}
 													whileInView={{ width: `${skill.level * 10}%` }}
 													viewport={{ once: true }}
@@ -117,8 +117,8 @@ export function SkillsPreview() {
 												<span className="text-muted-foreground">{skill.level}/10</span>
 											</div>
 											<div className="skill-bar">
-												<motion.div
-													className="skill-progress"
+									<motion.div
+										className="skill-progress text-accent"
 													initial={{ width: 0 }}
 													whileInView={{ width: `${skill.level * 10}%` }}
 													viewport={{ once: true }}

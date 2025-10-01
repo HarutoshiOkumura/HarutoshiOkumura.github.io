@@ -27,7 +27,7 @@
 		--popover: 240 20% 3.9%;
 		--popover-foreground: 0 0% 98%;
 
-		--primary: 169 70% 40%;
+		--primary: 17 98% 50%;
 		--primary-foreground: 0 0% 98%;
 
 		--secondary: 260 55% 56%;
@@ -99,7 +99,7 @@
 }
 
 .skill-progress {
-	@apply absolute top-0 left-0 h-full bg-primary rounded-full transition-all duration-1000;
+	@apply absolute top-0 left-0 h-full bg-current rounded-full transition-all duration-1000;
 }
 
 /* Three.js canvas */

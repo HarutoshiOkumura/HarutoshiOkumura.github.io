@@ -21,9 +21,8 @@ export default function AboutPage() {
 					<motion.div variants={fadeIn('right', 0.3)} className="space-y-6">
 						<h1 className="text-4xl font-bold">About Me</h1>
 						<p className="text-lg text-muted-foreground">
-							I am a passionate engineering student with a focus on innovation and problem-solving.
-							My academic journey has equipped me with strong technical skills and a deep understanding
-							of engineering principles.
+							Software Engineer & Research Assisstant at EmoryNLP, researching how we can use LLMs and formal logic to detect explicit contradictions. 
+							I'm also a Computer Science & Applied Maths student at Emory University, graduating in 2026 (27' for MS in CS).
 						</p>
 						<div className="space-y-4">
 							<h2 className="text-2xl font-semibold">My Journey</h2>

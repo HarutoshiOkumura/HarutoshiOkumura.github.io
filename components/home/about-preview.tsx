@@ -16,7 +16,7 @@ export function AboutPreview() {
 			<div className="container px-4">
 				<SectionHeader
 					title="About Me"
-					description="A passionate engineer dedicated to solving complex problems through innovative solutions."
+					description="I'm a software engineer focused on applying LLMs as a technical solution to different problems."
 				/>
 
 				<div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">
@@ -43,24 +43,25 @@ export function AboutPreview() {
 						viewport={{ once: true }}
 						className="flex flex-col justify-center"
 					>
-						<h3 className="text-2xl font-bold mb-4">Professional Engineer</h3>
+						<h3 className="text-2xl font-bold mb-4">Software Engineer x NLP Researcher</h3>
 						<p className="text-muted-foreground mb-6">
-							I'm a dedicated engineering student with a passion for innovation and problem-solving.
-							My academic journey has equipped me with strong technical skills and a deep understanding
-							of engineering principles that I apply to real-world challenges.
+						Software Engineer & Research Assisstant at EmoryNLP, researching how we can use LLMs and formal logic to detect explicit contradictions. 
+						I'm also a Computer Science & Applied Maths student at Emory University, graduating in 2026 (27' for MS in CS).
 						</p>
 
 						<div className="grid grid-cols-2 gap-4 mb-6">
 							<Card className="card-gradient">
 								<CardContent className="p-4">
 									<h4 className="font-semibold">Education</h4>
-									<p className="text-sm text-muted-foreground">B.S. Mechanical Engineering</p>
+									<p className="text-sm text-muted-foreground">B.S. Computer Science & AM (26')</p>
+									<p className="text-sm text-muted-foreground">M.S. Computer Science (27')</p>
 								</CardContent>
 							</Card>
 							<Card className="card-gradient">
 								<CardContent className="p-4">
 									<h4 className="font-semibold">Experience</h4>
-									<p className="text-sm text-muted-foreground">3+ Years</p>
+									<p className="text-sm text-muted-foreground">2+ Years in 5 startups</p>
+									<p className="text-sm text-muted-foreground">2+ Years in 2 research labs</p>
 								</CardContent>
 							</Card>
 							<Card className="card-gradient">
