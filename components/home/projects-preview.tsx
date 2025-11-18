@@ -1,6 +1,5 @@
 'use client';
 
-import Image from 'next/image';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { ArrowRight, Github, ExternalLink } from 'lucide-react';
@@ -21,7 +20,7 @@ export function ProjectsPreview() {
 			<div className="container px-4">
 				<SectionHeader
 					title="Featured Projects"
-					description="Explore some of my recent engineering projects and technical work."
+					description="A peak at what I have been working on!"
 				/>
 
 				<motion.div
@@ -38,15 +37,6 @@ export function ProjectsPreview() {
 							className="flex"
 						>
 							<Card className="flex flex-col h-full card-gradient">
-								<div className="relative h-48 w-full">
-									<Image
-										src={project.image}
-										alt={project.title}
-										fill
-										className="object-cover rounded-t-lg"
-										sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-									/>
-								</div>
 								<CardContent className="flex-grow p-6">
 									<h3 className="font-bold text-xl mb-2">{project.title}</h3>
 									<p className="text-muted-foreground mb-4">{project.description}</p>
@@ -58,24 +48,24 @@ export function ProjectsPreview() {
 										))}
 									</div>
 								</CardContent>
-								<CardFooter className="p-6 pt-0 gap-2">
-									{project.link && (
-										<Button size="sm" variant="outline" asChild>
-											<Link href={project.link} target="_blank" rel="noreferrer">
-												<ExternalLink className="h-4 w-4 mr-2" />
-												Demo
-											</Link>
-										</Button>
-									)}
-									{project.repo && (
-										<Button size="sm" variant="outline" asChild>
-											<Link href={project.repo} target="_blank" rel="noreferrer">
-												<Github className="h-4 w-4 mr-2" />
-												Repo
-											</Link>
-										</Button>
-									)}
-								</CardFooter>
+							<CardFooter className="p-6 pt-0 gap-2">
+								{project.link && project.link !== '#' && (
+									<Button size="sm" variant="outline" asChild>
+										<a href={project.link} target="_blank" rel="noopener noreferrer">
+											<ExternalLink className="h-4 w-4 mr-2" />
+											Demo
+										</a>
+									</Button>
+								)}
+								{project.repo && project.repo !== '#' && (
+									<Button size="sm" variant="outline" asChild>
+										<a href={project.repo} target="_blank" rel="noopener noreferrer">
+											<Github className="h-4 w-4 mr-2" />
+											Repo
+										</a>
+									</Button>
+								)}
+							</CardFooter>
 							</Card>
 						</motion.div>
 					))}

@@ -32,7 +32,7 @@ export function SkillsPreview() {
 			<div className="container px-4">
 				<SectionHeader
 					title="Technical Skills"
-					description="Key competencies and technical expertise that I've developed throughout my engineering journey."
+					description="What I have been learning... (and struggling with)"
 				/>
 
 				<motion.div
@@ -48,7 +48,7 @@ export function SkillsPreview() {
 					>
 						<Card>
 							<CardContent className="p-6">
-								<h3 className="text-xl font-bold mb-4">Technical Expertise</h3>
+								<h3 className="text-xl font-bold mb-4">Database & Services</h3>
 								<div className="space-y-4">
 									{topTechnicalSkills.map((skill, index) => (
 										<div key={index}>
@@ -78,7 +78,7 @@ export function SkillsPreview() {
 					>
 						<Card>
 							<CardContent className="p-6">
-								<h3 className="text-xl font-bold mb-4">Software Proficiency</h3>
+								<h3 className="text-xl font-bold mb-4">Software Languages</h3>
 								<div className="space-y-4">
 									{topSoftwareSkills.map((skill, index) => (
 										<div key={index}>
@@ -108,7 +108,7 @@ export function SkillsPreview() {
 					>
 						<Card>
 							<CardContent className="p-6">
-								<h3 className="text-xl font-bold mb-4">Soft Skills</h3>
+								<h3 className="text-xl font-bold mb-4">Libraries & Frameworks</h3>
 								<div className="space-y-4">
 									{topSoftSkills.map((skill, index) => (
 										<div key={index}>

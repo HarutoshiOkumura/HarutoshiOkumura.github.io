@@ -25,11 +25,11 @@ export function AboutPreview() {
 						initial="hidden"
 						whileInView="show"
 						viewport={{ once: true }}
-						className="relative h-[400px] rounded-lg overflow-hidden"
+						className="relative w-[400px] h-[400px] rounded-full overflow-hidden mx-auto"
 					>
 						<Image
-							src="https://images.pexels.com/photos/3861958/pexels-photo-3861958.jpeg"
-							alt="Engineer portrait"
+							src="/headshot.png"
+							alt="Harutoshi Okumura portrait"
 							fill
 							className="object-cover"
 							sizes="(max-width: 768px) 100vw, 50vw"

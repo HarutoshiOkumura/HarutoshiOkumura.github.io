@@ -150,6 +150,60 @@ export const projects: Project[] = [
 		repo: '#',
 	},
 	{
+		title: 'Linux "pipesort" Multiprocess Utility',
+		description:
+			'Developed a C utility that reads text from standard input, parses it into words, and outputs unique, sorted words with their appearance counts using a multiprocess pipeline wired together with fork, exec, and Unix pipes.',
+		image: 'https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg',
+		tags: ['C', 'Linux', 'Multiprocessing', 'IPC', 'Pipes', 'fork', 'exec', 'dup2'],
+		link: '#',
+		repo: '#',
+	},
+	{
+		title: 'Linux "myar" Archiving Utility',
+		description:
+			'Built "myar", a command-line archiving tool in C that mirrors the core functionality of the standard Linux ar utility (append, extract, list, delete) using only low-level system calls like read, write, lseek, and stat, directly manipulating file metadata to stay compatible with the ar_hdr format.',
+		image: 'https://images.pexels.com/photos/1036657/pexels-photo-1036657.jpeg',
+		tags: ['C', 'Linux', 'File I/O', 'System Calls', 'Command Line Tool', 'stat', 'lseek', 'Metadata'],
+		link: '#',
+		repo: '#',
+	},
+	{
+		title: 'Adversarial Pacman Search Agents',
+		description:
+			'Implemented Reflex, Minimax, Alpha-Beta, and Expectimax Pacman agents in Python, plus a custom game-state evaluator that balances food distance, capsule control, and ghost threat modeling to stay competitive against both optimal and stochastic ghosts.',
+		image: 'https://images.pexels.com/photos/269077/pexels-photo-269077.jpeg',
+		tags: ['Python', 'AI Search', 'Minimax', 'Alpha-Beta Pruning', 'Expectimax', 'Heuristic Design', 'Game AI'],
+		link: '#',
+		repo: '#',
+	},
+	{
+		title: 'Pacman Reinforcement Learning Suite',
+		description:
+			'Built value iteration, tabular Q-learning, and approximate Q-learning agents that learn optimal navigation policies from MDP dynamics or experience; tuned epsilon-greedy exploration, TD updates, and feature-weighted function approximation to converge on high-scoring play.',
+		image: 'https://images.pexels.com/photos/1181354/pexels-photo-1181354.jpeg',
+		tags: ['Python', 'Reinforcement Learning', 'Value Iteration', 'Q-Learning', 'Approximate Q-Learning', 'Feature Engineering', 'MDP'],
+		link: '#',
+		repo: '#',
+	},
+	{
+		title: 'Probabilistic Ghost Tracking & Pursuit',
+		description:
+			'Implemented exact inference for Pacman ghost tracking (forward algorithm with noisy distance sensors) and a greedy chasing agent that converts belief distributions into maze-distance pursuit targets; outlined remaining particle-filter TODOs for scalable multi-ghost tracking.',
+		image: 'https://images.pexels.com/photos/602383/pexels-photo-602383.jpeg',
+		tags: ['Python', 'Probabilistic Inference', 'Bayes Filters', 'Belief Tracking', 'Maze Search', 'AI Agents'],
+		link: '#',
+		repo: '#',
+	},
+	{
+		title: 'Computer Vision Tennis Analytics Suite',
+		description:
+			'Engineered a computer vision pipeline that fine-tunes Ultralytics YOLOv11 on Roger Federer match footage, tracks players and the ball frame-to-frame, and extracts pose keypoints with a custom PyTorch CNN while OpenCV (cv2) ingests, annotates, and exports match video. Aggregated detection telemetry into data-driven insights that power concrete match features and visual overlays.',
+		image: 'https://images.pexels.com/photos/114296/pexels-photo-114296.jpeg',
+		tags: ['Computer Vision', 'Ultralytics', 'YOLOv11', 'PyTorch', 'OpenCV', 'Object Tracking', 'Data Analytics'],
+		link: '#',
+		repo: '#',
+	},
+	{
 		title: 'Pediatric Savior Airway Management Simulation Chatbot',
 		description:
 			'Developed a chatbot for pediatric airway management simulation, training 100+ medical students asynchronously with flexibility in airway management scenarios.',
@@ -286,7 +340,7 @@ export const skills: Skill[] = [
 	// Software Languages
 	{ name: 'Python', level: 9, category: 'software' },
 	{ name: 'TypeScript', level: 8, category: 'software' },
-	{ name: 'C++', level: 4, category: 'software' },
+	{ name: 'C++', level: 9, category: 'software' },
 	{ name: 'Java', level: 9, category: 'software' },
 	{ name: 'C', level: 7, category: 'software' },
 	{ name: 'Git', level: 8, category: 'software' },

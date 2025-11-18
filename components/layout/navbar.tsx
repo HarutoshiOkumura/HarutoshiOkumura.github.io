@@ -20,6 +20,9 @@ import {
 	DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
 
+const CURRENT_STATUS =
+	'Currently grinding on the Google Tunix Hackathon... ';
+
 export function Navbar() {
 	const [isScrolled, setIsScrolled] = useState(false);
 	const pathname = usePathname();
@@ -41,6 +44,11 @@ export function Navbar() {
 			animate={{ y: 0 }}
 			transition={{ duration: 0.5 }}
 		>
+			<div className="bg-[#fb4a02] text-white text-sm">
+				<div className="container flex h-11 items-center justify-center text-center font-medium">
+					{CURRENT_STATUS}
+				</div>
+			</div>
 			<div className="container flex h-16 items-center justify-between py-4">
 				<div className="flex items-center gap-6 md:gap-10">
 					<Link href="/" className="flex items-center space-x-2">
@@ -126,7 +134,9 @@ export function Navbar() {
 				{/* Desktop actions */}
 				<div className="hidden md:flex items-center gap-4">
 					<Link href="/contact">
-						<Button>Contact Me</Button>
+						<Button className="bg-white text-black hover:bg-white/90">
+							Contact Me
+						</Button>
 					</Link>
 				</div>
 			</div>

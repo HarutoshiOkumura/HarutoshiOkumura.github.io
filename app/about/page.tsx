@@ -85,8 +85,7 @@ export default function AboutPage() {
 							<CardContent className="p-6">
 								<h3 className="text-xl font-semibold mb-4">Skills</h3>
 								<p className="text-muted-foreground">
-									Proficient in various engineering tools and technologies, with a strong
-									foundation in problem-solving and analytical thinking.
+									Stuff I learned:
 								</p>
 							</CardContent>
 						</Card>

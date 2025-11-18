@@ -50,7 +50,7 @@ export function Footer() {
 							<span className="text-2xl font-bold text-gradient">Portfolio</span>
 						</Link>
 						<p className="mt-4 text-sm text-muted-foreground">
-							A professional portfolio showcasing my skills, projects, and achievements in engineering.
+							Things I do when I'm not doomscrolling.
 						</p>
 						<div className="mt-6 flex flex-wrap gap-3">
 							{socialLinks.map((link, index) => (
@@ -89,7 +89,7 @@ export function Footer() {
 
 				<div className="flex flex-col sm:flex-row items-center justify-between text-sm">
 					<p className="text-muted-foreground">
-						© {currentYear} Engineering Portfolio. All rights reserved.
+						© {currentYear} Inspired by Engineering Portfolio. 
 					</p>
 					<div className="mt-4 sm:mt-0 flex gap-4">
 						<Link href="/privacy" className="text-muted-foreground hover:text-primary transition-colors">

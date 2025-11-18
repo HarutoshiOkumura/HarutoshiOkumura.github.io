@@ -66,7 +66,7 @@ export function HeroSection() {
 						variants={fadeIn('up', 0.5)}
 						className="mt-6 text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto"
 					>
-						Take a look at my projects and experiences, pretty please.
+						Take a look at my projects and experiences, pretty please. 👉👈
 					</motion.p>
 
 					<motion.div
@@ -79,7 +79,7 @@ export function HeroSection() {
 							</Link>
 						</Button>
 						<Button size="lg" variant="outline" asChild>
-							<a href="https://drive.google.com/file/d/1hPvLT2zqSktxkobCYoyqpL7q8GScs_ZX/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+							<a href="https://drive.google.com/file/d/1SB_McB6scPqqY9LDMsoPkI7vy_jk4O-W/view?usp=sharing" target="_blank" rel="noopener noreferrer">
 								Resume <FileDown className="ml-2 h-4 w-4" />
 							</a>
 						</Button>

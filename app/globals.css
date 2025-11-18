@@ -30,7 +30,7 @@
 		--primary: 17 98% 50%;
 		--primary-foreground: 0 0% 98%;
 
-		--secondary: 260 55% 56%;
+		--secondary: 189 75% 40%;
 		--secondary-foreground: 0 0% 98%;
 
 		--accent: 37 90% 64%;
@@ -48,7 +48,7 @@
 
 		--chart-1: 169 70% 40%;
 		/* teal */
-		--chart-2: 260 55% 56%;
+		--chart-2: 189 75% 40%;
 		/* purple */
 		--chart-3: 37 90% 64%;
 		/* amber */
@@ -135,7 +135,14 @@
 }
 
 .text-gradient {
-	@apply bg-clip-text text-transparent bg-gradient-to-r from-primary via-secondary to-accent;
+	@apply bg-clip-text text-transparent;
+	background-image: linear-gradient(
+		to right,
+		hsl(var(--primary)) 0%,
+		hsl(var(--primary)) 25%,
+		hsl(var(--secondary)) 75%,
+		hsl(var(--secondary)) 100%
+	);
 }
 
 .section-title {
