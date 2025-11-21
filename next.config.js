@@ -9,10 +9,6 @@ const nextConfig = {
 		config.cache = false;
 		return config;
 	},
-	experimental: {
-		appDir: true,
-		serverActions: true,
-	},
 };
 
 module.exports = nextConfig;
