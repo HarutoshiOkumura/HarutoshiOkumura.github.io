@@ -1,6 +1,4 @@
 /** @type {import('next').NextConfig} */
-const isVercel = process.env.VERCEL === '1';
-
 const nextConfig = {
 	eslint: {
 		ignoreDuringBuilds: true,
@@ -11,9 +9,9 @@ const nextConfig = {
 		config.cache = false;
 		return config;
 	},
-	output: isVercel ? undefined : 'export',
+	output: 'export',
 	images: {
-		unoptimized: !isVercel,
+		unoptimized: true,
 	},
 };
 

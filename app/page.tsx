@@ -3,7 +3,7 @@
 import { useEffect, useState, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import * as THREE from 'three';
-import NET from 'vanta/dist/vanta.net.min';
+
 
 import { HeroSection } from '@/components/home/hero-section';
 import { AboutPreview } from '@/components/home/about-preview';
@@ -28,27 +28,38 @@ export default function Home() {
 	}, []);
 
 	useEffect(() => {
-		if (!isLoading && !vantaEffect && vantaRef.current) {
-			setVantaEffect(
-				NET({
-					el: vantaRef.current,
-					THREE: THREE,
-					mouseControls: true,
-					touchControls: true,
-					gyroControls: false,
-					minHeight: 200.00,
-					minWidth: 200.00,
-					scale: 0.8,
-					scaleMobile: 0.8,
-					color: 0xff3f81, // Net-line colors? 
-					backgroundColor: 0x000000,
-					points: 10.00,
-					maxDistance: 15.00,
-					spacing: 20.00,
-					showDots: false,
-				})
-			);
-		}
+		const loadVanta = async () => {
+			if (!isLoading && !vantaEffect && vantaRef.current) {
+				try {
+					// @ts-ignore
+					const NET = (await import('vanta/dist/vanta.net.min')).default;
+					setVantaEffect(
+						NET({
+							el: vantaRef.current,
+							THREE: THREE,
+							mouseControls: true,
+							touchControls: true,
+							gyroControls: false,
+							minHeight: 200.00,
+							minWidth: 200.00,
+							scale: 0.8,
+							scaleMobile: 0.8,
+							color: 0xff3f81, // Net-line colors? 
+							backgroundColor: 0x000000,
+							points: 10.00,
+							maxDistance: 15.00,
+							spacing: 20.00,
+							showDots: false,
+						})
+					);
+				} catch (error) {
+					console.error("Failed to load Vanta effect", error);
+				}
+			}
+		};
+
+		loadVanta();
+
 		return () => {
 			if (vantaEffect) vantaEffect.destroy();
 		};
