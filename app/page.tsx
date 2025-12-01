@@ -2,7 +2,7 @@
 
 import { useEffect, useState, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import * as THREE from 'three';
+
 
 
 import { HeroSection } from '@/components/home/hero-section';
@@ -31,8 +31,11 @@ export default function Home() {
 		const loadVanta = async () => {
 			if (!isLoading && !vantaEffect && vantaRef.current) {
 				try {
+					// Dynamically import THREE and Vanta
+					const THREE = await import('three');
 					// @ts-ignore
 					const NET = (await import('vanta/dist/vanta.net.min')).default;
+
 					setVantaEffect(
 						NET({
 							el: vantaRef.current,
