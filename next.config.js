@@ -6,12 +6,9 @@ const nextConfig = {
 		ignoreDuringBuilds: true,
 	},
 	typescript: {
-		ignoreBuildErrors: true,
+		// ignoreBuildErrors: true,
 	},
 	productionBrowserSourceMaps: false,
-	experimental: {
-		webpackMemoryOptimizations: true,
-	},
 	devIndicators: false,
 	webpack: (config) => {
 		// Disable cache for both client and server builds
