@@ -10,11 +10,6 @@ const nextConfig = {
 	},
 	productionBrowserSourceMaps: false,
 	devIndicators: false,
-	webpack: (config) => {
-		// Disable cache for both client and server builds
-		config.cache = false;
-		return config;
-	},
 	output: isVercel ? undefined : 'export',
 	images: {
 		unoptimized: !isVercel,
