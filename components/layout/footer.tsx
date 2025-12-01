@@ -42,7 +42,7 @@ export function Footer() {
 	];
 
 	return (
-		<footer className="bg-card py-12 border-t">
+		<footer className="bg-background py-12 border-t">
 			<div className="container px-4 mx-auto">
 				<div className="grid grid-cols-1 md:grid-cols-4 gap-8">
 					<div className="md:col-span-1">
@@ -89,7 +89,7 @@ export function Footer() {
 
 				<div className="flex flex-col sm:flex-row items-center justify-between text-sm">
 					<p className="text-muted-foreground">
-						© {currentYear} Inspired by Engineering Portfolio. 
+						© {currentYear} Inspired by Engineering Portfolio.
 					</p>
 					<div className="mt-4 sm:mt-0 flex gap-4">
 						<Link href="/privacy" className="text-muted-foreground hover:text-primary transition-colors">

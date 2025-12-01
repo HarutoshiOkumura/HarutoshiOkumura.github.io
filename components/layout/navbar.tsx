@@ -44,7 +44,7 @@ export function Navbar() {
 			animate={{ y: 0 }}
 			transition={{ duration: 0.5 }}
 		>
-			<div className="bg-[#fb4a02] text-white text-sm">
+			<div className="bg-[#c66741] text-white text-sm">
 				<div className="container flex h-11 items-center justify-center text-center font-medium">
 					{CURRENT_STATUS}
 				</div>
