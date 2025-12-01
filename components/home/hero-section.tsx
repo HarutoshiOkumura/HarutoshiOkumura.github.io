@@ -30,7 +30,7 @@ export function HeroSection() {
 						variants={fadeIn('up', 0.5)}
 						className="mt-6 text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto"
 					>
-						Take a look at my projects and experiences, pretty please.
+						Currently working on the Google Tunix Hackathon...
 					</motion.p>
 
 					<motion.div

@@ -11,6 +11,8 @@ import { ProjectsPreview } from '@/components/home/projects-preview';
 import { SkillsPreview } from '@/components/home/skills-preview';
 import { ContactPreview } from '@/components/home/contact-preview';
 
+import TetrisLoading from '@/components/ui/tetris-loader';
+
 export default function Home() {
 	const [isLoading, setIsLoading] = useState(true);
 	const [vantaEffect, setVantaEffect] = useState<any>(null);
@@ -68,27 +70,7 @@ export default function Home() {
 							animate={{ opacity: 1, y: 0 }}
 							transition={{ duration: 0.5 }}
 						>
-							<motion.div
-								className="w-16 h-16 border-t-4 border-primary border-solid rounded-full"
-								animate={{ rotate: 360 }}
-								transition={{
-									repeat: Infinity,
-									duration: 1,
-									ease: "linear"
-								}}
-							/>
-							<motion.p
-								className="mt-4 text-lg"
-								animate={{
-									opacity: [0.5, 1, 0.5],
-								}}
-								transition={{
-									repeat: Infinity,
-									duration: 1.5
-								}}
-							>
-								Loading...
-							</motion.p>
+							<TetrisLoading size="md" speed="fast" />
 						</motion.div>
 					</motion.div>
 				)}

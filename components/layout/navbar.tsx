@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { motion } from 'framer-motion';
-import { X, Menu, ChevronDown } from 'lucide-react';
+import { X, Menu, ChevronDown, Home, Zap, Briefcase, Folder, Mail } from 'lucide-react';
 
 import { siteConfig } from '@/lib/constants';
 import { Button } from '@/components/ui/button';
@@ -19,9 +19,10 @@ import {
 	DropdownMenuItem,
 	DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
+import { ExpandableTabs } from '@/components/ui/expandable-tabs';
 
-const CURRENT_STATUS =
-	'Currently grinding on the Google Tunix Hackathon... ';
+// const CURRENT_STATUS =
+// 	'Currently grinding on the Google Tunix Hackathon... ';
 
 export function Navbar() {
 	const [isScrolled, setIsScrolled] = useState(false);
@@ -36,6 +37,22 @@ export function Navbar() {
 		return () => window.removeEventListener('scroll', handleScroll);
 	}, []);
 
+	// ...
+
+	const tabs = [
+		{ title: 'Home', icon: Home, href: '/' },
+		{ title: 'Skills', icon: Zap, href: '/skills' },
+		{ title: 'Experience', icon: Briefcase, href: '/experience' },
+		{ title: 'Projects', icon: Folder, href: '/projects' },
+		{ title: 'Contact', icon: Mail, href: '/contact' },
+	];
+
+	const getSelectedIndex = (path: string) => {
+		const index = tabs.findIndex((tab) => tab.href === path);
+		return index !== -1 ? index : null;
+	};
+	const selectedIndex = getSelectedIndex(pathname);
+
 	return (
 		<motion.header
 			className={`fixed top-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-background/95 backdrop-blur-sm shadow-md' : 'bg-transparent'
@@ -44,33 +61,22 @@ export function Navbar() {
 			animate={{ y: 0 }}
 			transition={{ duration: 0.5 }}
 		>
-			<div className="bg-[#c66741] text-white text-sm">
+			{/* <div className="bg-[#c66741] text-white text-sm">
 				<div className="container flex h-11 items-center justify-center text-center font-medium">
 					{CURRENT_STATUS}
 				</div>
-			</div>
-			<div className="container flex h-16 items-center justify-between py-4">
-				<div className="flex items-center gap-6 md:gap-10">
-					<Link href="/" className="flex items-center space-x-2">
-						<motion.div
-							whileHover={{ scale: 1.05 }}
-							className="font-bold text-2xl text-gradient"
-						>
-							oku.no.haru
-						</motion.div>
-					</Link>
-					<nav className="hidden md:flex gap-6">
-						{siteConfig.mainNav.map((item) => (
-							<Link
-								key={item.href}
-								href={item.href}
-								className={`nav-link text-sm font-medium transition-colors hover:text-primary ${pathname === item.href ? 'text-primary active' : 'text-muted-foreground'
-									}`}
-							>
-								{item.title}
-							</Link>
-						))}
-					</nav>
+			</div> */}
+			<div className="container flex h-16 items-center justify-between py-4 relative">
+				<Link href="/" className="flex items-center space-x-2">
+					<motion.div
+						whileHover={{ scale: 1.05 }}
+						className="font-bold text-2xl text-gradient"
+					>
+						oku.no.haru
+					</motion.div>
+				</Link>
+				<div className="hidden md:flex absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
+					<ExpandableTabs tabs={tabs} selected={selectedIndex} />
 				</div>
 
 				{/* Mobile menu */}
@@ -131,14 +137,7 @@ export function Navbar() {
 					</Sheet>
 				</div>
 
-				{/* Desktop actions */}
-				<div className="hidden md:flex items-center gap-4">
-					<Link href="/contact">
-						<Button className="bg-white text-black hover:bg-white/90">
-							Contact Me
-						</Button>
-					</Link>
-				</div>
+
 			</div>
 		</motion.header>
 	);
