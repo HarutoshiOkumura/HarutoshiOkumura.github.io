@@ -16,7 +16,7 @@ export function AboutPreview() {
 			<div className="container px-4">
 				<SectionHeader
 					title="About Me"
-					description="I'm a software engineer focused on applying LLMs as a technical solution to different problems."
+					description="I'm a software engineer focused on applying LLMs as a technical solution to different problems. Recently, I've been tinkering on IPC projects and my new Fedora Linux Distro!"
 				/>
 
 				<div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">
@@ -72,8 +72,8 @@ export function AboutPreview() {
 							</Card>
 							<Card className="card-gradient">
 								<CardContent className="p-4">
-									<h4 className="font-semibold">Awards</h4>
-									<p className="text-sm text-muted-foreground">5 Recognitions</p>
+									<h4 className="font-semibold">ResearchPaper</h4>
+									<p className="text-sm text-muted-foreground">1 in progress</p>
 								</CardContent>
 							</Card>
 						</div>

@@ -22,29 +22,30 @@ export default function AboutPage() {
 						<h1 className="text-4xl font-bold">About Me</h1>
 						<p className="text-lg text-muted-foreground">
 							Software Engineer & Research Assisstant at EmoryNLP, researching how we can use LLMs and formal logic to detect explicit contradictions. 
-							I'm also a Computer Science & Applied Maths student at Emory University, graduating in 2026 (27' for MS in CS).
+							I'm also a Computer Science & Applied Maths student at Emory University, graduating in 2026 (27' for MS in CS).hroughout my academic career, I've been involved in various projects that have
+								helped me develop practical skills and theoretical knowledge. I believe in
+								continuous learning and staying updated with the latest technological advancements.
 						</p>
 						<div className="space-y-4">
 							<h2 className="text-2xl font-semibold">My Journey</h2>
 							<p className="text-muted-foreground">
-								Throughout my academic career, I've been involved in various projects that have
-								helped me develop practical skills and theoretical knowledge. I believe in
-								continuous learning and staying updated with the latest technological advancements.
+								Fun fact, I was a Astrophysics major at first, and changed my major 5 times (yes I touched Chem too..)
+								before locking in on Computer Science during my sophomore year. 
 							</p>
 						</div>
 						<Button className="mt-6" asChild>
-							<a href="/cv.pdf" download>
-								Download CV <ArrowDownCircle className="ml-2 h-4 w-4" />
+							<a href="https://drive.google.com/file/d/1SB_McB6scPqqY9LDMsoPkI7vy_jk4O-W/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+								Download Resume <ArrowDownCircle className="ml-2 h-4 w-4" />
 							</a>
 						</Button>
 					</motion.div>
 
-					<motion.div variants={fadeIn('left', 0.3)} className="relative h-[500px]">
+					<motion.div variants={fadeIn('left', 0.3)} className="relative h-[500px] w-[500px] mx-auto rounded-full overflow-hidden">
 						<Image
-							src="https://images.pexels.com/photos/3861958/pexels-photo-3861958.jpeg"
-							alt="Professional photo"
+							src="/headshot.png"
+							alt="Harutoshi Okumura portrait"
 							fill
-							className="object-cover rounded-lg"
+							className="object-cover"
 							sizes="(max-width: 768px) 100vw, 50vw"
 						/>
 					</motion.div>

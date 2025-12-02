@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 import { ArrowRight, FileDown } from 'lucide-react';
 
 import { Button } from '@/components/ui/button';
+import { MouseFollowingEyes } from '@/components/ui/mouse-following-eyes';
 import { fadeIn, staggerContainer } from '@/lib/motion';
 
 export function HeroSection() {
@@ -23,7 +24,7 @@ export function HeroSection() {
 						variants={fadeIn('up', 0.3)}
 						className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight"
 					>
-						<span className="text-gradient">Harutoshi Okumura's</span> Portfolio
+						<span className="text-gradient">Harutoshi Okumura's</span> Portfolio <MouseFollowingEyes size="md" className="inline-flex align-middle ml-2" />
 					</motion.h1>
 
 					<motion.p
@@ -38,8 +39,8 @@ export function HeroSection() {
 						className="mt-10 flex flex-wrap gap-4 justify-center"
 					>
 						<Button size="lg" asChild>
-							<Link href="/projects">
-								View Projects <ArrowRight className="ml-2 h-4 w-4" />
+							<Link href="/experience">
+								View Experience <ArrowRight className="ml-2 h-4 w-4" />
 							</Link>
 						</Button>
 						<Button size="lg" variant="outline" asChild>
