@@ -33,10 +33,8 @@ export default function AboutPage() {
 								before locking in on Computer Science during my sophomore year. 
 							</p>
 						</div>
-						<Button className="mt-6" asChild>
-							<a href="https://drive.google.com/file/d/1SB_McB6scPqqY9LDMsoPkI7vy_jk4O-W/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-								Download Resume <ArrowDownCircle className="ml-2 h-4 w-4" />
-							</a>
+						<Button className="mt-6" disabled>
+							Download Resume <ArrowDownCircle className="ml-2 h-4 w-4" />
 						</Button>
 					</motion.div>
 
