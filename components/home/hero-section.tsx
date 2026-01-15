@@ -43,10 +43,8 @@ export function HeroSection() {
 								View Experience <ArrowRight className="ml-2 h-4 w-4" />
 							</Link>
 						</Button>
-						<Button size="lg" variant="outline" asChild>
-							<a href="https://drive.google.com/file/d/1SB_McB6scPqqY9LDMsoPkI7vy_jk4O-W/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-								Resume <FileDown className="ml-2 h-4 w-4" />
-							</a>
+						<Button size="lg" variant="outline" disabled>
+							Resume <FileDown className="ml-2 h-4 w-4" />
 						</Button>
 					</motion.div>
 				</motion.div>
